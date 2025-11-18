@@ -1,5 +1,5 @@
     body {
-        background-image: url('../images/background.jpg'); /* Adjust path as needed */
+        background-image: url(ICE1.jpg); /* Adjust path as needed */
         background-size: cover; /* Ensures the image covers the entire element */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents image repetition */
