@@ -5,3 +5,46 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ubuntu-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 2000px;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}

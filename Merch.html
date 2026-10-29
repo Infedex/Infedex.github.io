@@ -3,16 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infedex Music</title>
-    <link rel="stylesheet" href="css/Merch.css">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wordart radial"><span class="text">shit wank records</span></div>
+    <header>
+        <h1 class="ubuntu-font">My Image Gallery</h1>
+    </header>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="path/to/image1.jpg" alt="Image 1" class="responsive-image" data-magnify-src="path/to/image1.jpg">
+            <a href="path/to/image1.jpg" class="ubuntu-font">Image 1</a>
+        </div>
+        <div class="gallery-item">
+            <img src="path/to/image2.jpg" alt="Image 2" class="responsive-image" data-magnify-src="path/to/image2.jpg">
+            <a href="path/to/image2.jpg" class="ubuntu-font">Image 2</a>
+        </div>
+        <div class="gallery-item">
+            <img src="path/to/image3.jpg" alt="Image 3" class="responsive-image" data-magnify-src="path/to/image3.jpg">
+            <a href="path/to/image3.jpg" class="ubuntu-font">Image 3</a>
+        </div>
+    </div>
 
-    <div class="top">
-    <h2>thanks for stopping by the cesspit - this website is under construction by someone that has absolutely no idea what they are doing.</h2>
-    <img src="gifs/JC.gif">
-</div>
+    <!-- Magnific Popup for image magnification -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup/1.1.0/magnific-popup.css">
+    <script>
+        $(document).ready(function() {
+            $('.responsive-image').magnificPopup({
+                type: 'image',
+                mainClass: 'mfp-with-zoom',
+                zoom: {
+                    enabled: true,
+                    duration: 300
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
 
         <ul>
             <li><a href="Welcome.html">Enter</a></li>
@@ -21,25 +51,7 @@
             <li><a href="horror.html">Music Videos</a></li>
         <h1>Sound warning<br>Click to play</h1>
         <img src="gifs/audio.gif">
-    </ul>
-        </nav>
 
-    <div class="audio">
-        <h1>Sound warning</h1>
-    </div>    
-    
-    <audio id="music" controls="controls">
-        <source src="songs/Merch.mp3" type="audio/mpeg">
-        <source src="songs/Merch
-.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio>
-    
-
-    <div class="side">
-        <img src="gifs/watching2.gif">
-        <img src="gifs/watching1.gif">
-        <img src="gifs/watching3.gif">
     </div>
 </body>
 </html>
